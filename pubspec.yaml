@@ -1,0 +1,38 @@
+name: inspireui
+description: Common useful and Widget Use For FluxStore Products (Flutter E-Commerce App)
+version: 1.3.0
+homepage: https://inspireui.com/
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+  flutter: ">=1.12.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  timeago: ^3.3.0
+  intl: ^0.18.0
+  event_bus: ^2.0.0
+  encrypt: ^5.0.1
+  dio: ^4.0.6
+  logger: ^1.1.0
+  flutter_svg: ^1.1.6
+  http: ^0.13.5
+  flutter_secure_storage: ^7.0.1
+  plugin_platform_interface: ^2.1.3
+  easy_debounce: ^2.0.2+1
+  universal_platform: ^1.0.0+1
+
+flutter:
+  uses-material-design: true
+
+  plugin:
+    platforms:
+      android:
+        package: com.inspireui.common_library
+        pluginClass: CommonLibraryPlugin
+      ios:
+        pluginClass: CommonLibraryPlugin
+
+dev_dependencies:
+  flutter_lints: 2.0.1
